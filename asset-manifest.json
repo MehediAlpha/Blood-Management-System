@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Blood-Management-System/static/css/main.49b6b6b3.chunk.css",
+    "main.js": "/Blood-Management-System/static/js/main.ca474639.chunk.js",
+    "main.js.map": "/Blood-Management-System/static/js/main.ca474639.chunk.js.map",
+    "runtime-main.js": "/Blood-Management-System/static/js/runtime-main.036d9ce0.js",
+    "runtime-main.js.map": "/Blood-Management-System/static/js/runtime-main.036d9ce0.js.map",
+    "static/css/2.fe359a49.chunk.css": "/Blood-Management-System/static/css/2.fe359a49.chunk.css",
+    "static/js/2.e9244116.chunk.js": "/Blood-Management-System/static/js/2.e9244116.chunk.js",
+    "static/js/2.e9244116.chunk.js.map": "/Blood-Management-System/static/js/2.e9244116.chunk.js.map",
+    "static/js/3.b282562f.chunk.js": "/Blood-Management-System/static/js/3.b282562f.chunk.js",
+    "static/js/3.b282562f.chunk.js.map": "/Blood-Management-System/static/js/3.b282562f.chunk.js.map",
+    "index.html": "/Blood-Management-System/index.html",
+    "static/css/2.fe359a49.chunk.css.map": "/Blood-Management-System/static/css/2.fe359a49.chunk.css.map",
+    "static/css/main.49b6b6b3.chunk.css.map": "/Blood-Management-System/static/css/main.49b6b6b3.chunk.css.map",
+    "static/js/2.e9244116.chunk.js.LICENSE.txt": "/Blood-Management-System/static/js/2.e9244116.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.036d9ce0.js",
+    "static/css/2.fe359a49.chunk.css",
+    "static/js/2.e9244116.chunk.js",
+    "static/css/main.49b6b6b3.chunk.css",
+    "static/js/main.ca474639.chunk.js"
+  ]
+}
