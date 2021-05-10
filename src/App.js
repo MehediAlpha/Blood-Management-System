@@ -29,7 +29,7 @@ class App extends Component{
       this.setState({route2: 'profile'})
     }
     this.setState({route: route})
-    console.log(this.state.isSignedIn);
+    //console.log(this.state.isSignedIn);
   }
   onRouteChange2 = (route2) =>{
     this.setState({route2: route2})
@@ -49,7 +49,7 @@ class App extends Component{
         
         : this.state.route === 'signin'
           ? <SignIn onRouteChange = {this.onRouteChange}/>
-          : <Register/>
+          : <Register onRouteChange = {this.onRouteChange}/>
         }
         <div>
           <MediaQuery maxDeviceWidth={1000} >
