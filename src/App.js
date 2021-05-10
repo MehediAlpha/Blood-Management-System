@@ -52,16 +52,15 @@ class App extends Component{
           : <Register/>
         }
         <div>
-        <MediaQuery maxDeviceWidth={1000} >
-          <Particles className='prticle' params={prticleMobile} />
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={1000} maxDeviceWidth={1600}>
-          <Particles className='prticle' params={prticleTab} />
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={1600}>
-          <Particles className='prticle' params={prticlePC} />
-        </MediaQuery>
-
+          <MediaQuery maxDeviceWidth={1000} >
+            <Particles className='prticle' params={prticleMobile} />
+          </MediaQuery>
+          <MediaQuery minDeviceWidth={1000} maxDeviceWidth={1600}>
+            <Particles className='prticle' params={prticleTab} />
+          </MediaQuery>
+          <MediaQuery minDeviceWidth={1600}>
+            <Particles className='prticle' params={prticlePC} />
+          </MediaQuery>
         </div>
 
       </div>
@@ -75,7 +74,7 @@ const prticlePC ={
         "value": 150,
         "density": {
           "enable": true,
-          "value_area": 900
+          "value_area": 1200
         }
       },
       "color": {
@@ -155,7 +154,7 @@ const prticleTab ={
         "value": 100,
         "density": {
           "enable": true,
-          "value_area": 1600
+          "value_area": 1200
         }
       },
       "color": {
@@ -232,10 +231,10 @@ const prticleTab ={
 const prticleMobile ={
   "particles": {
       "number": {
-        "value": 50,
+        "value": 70,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 700
         }
       },
       "color": {
