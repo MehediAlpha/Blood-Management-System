@@ -17,8 +17,16 @@ class App extends Component{
     this.state = {
       route: 'signin',
       route2: 'profile',
-      isSignedIn: false
-    }
+      isSignedIn: false,
+      user : {
+        name : 'asd',
+        email : 'asd',
+        phone : 'asd',
+        district: 'asd',
+        upazilla : 'asd',
+        bloodType : 'asd',
+      }
+    } 
   }
 
   onRouteChange = (route) => {
@@ -34,21 +42,35 @@ class App extends Component{
   onRouteChange2 = (route2) =>{
     this.setState({route2: route2})
   }
+
+  userProfile = (data) => {
+    console.log(data);
+    this.setState({
+      user : {
+        name : data.name,
+        email : data.email,
+        phone : data.phone,
+        district: data.district,
+        upazilla : data.upazilla,
+        bloodType : data.bloodType
+      }
+    })
+  }
   
   render() {
-
     return (
       <div className="App">
-        <Logo/>
         <Navigation isSignedIn = {this.state.isSignedIn} onRouteChange = {this.onRouteChange} onRouteChange2 = {this.onRouteChange2}/>
         {
           this.state.route === 'home' 
         ?  this.state.route2 === 'profile'
-                  ? <Profile/>
+                  ? <Profile user = {this.state.user}/>
                   : <BloodSection/> 
         
         : this.state.route === 'signin'
-          ? <SignIn onRouteChange = {this.onRouteChange}/>
+          ? <div>
+            <Logo/> <SignIn userProfile = {this.userProfile} onRouteChange = {this.onRouteChange}/>
+            </div>  
           : <Register onRouteChange = {this.onRouteChange}/>
         }
         <div>

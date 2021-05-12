@@ -1,7 +1,10 @@
 import React from 'react';
 import './SignIn.css'
 
+
+
 class SignIn extends React.Component {
+	
 
 	constructor(){
 		super();
@@ -19,8 +22,7 @@ class SignIn extends React.Component {
 	}
 	
 	onSubmitChange = () => {
-		console.log(this.state);
-
+		//console.log(this.state);
 		fetch('http://localhost:3000/signin', {
 			method: 'post',
 			headers: {'content-type' : 'application/json',
@@ -32,9 +34,13 @@ class SignIn extends React.Component {
 		})
 		.then(response => response.json())
 		.then(data =>{
-			console.log(data);
-			if(data === 'Sign In Success'){
+			if(data !== 'Error Loggin In!'){
+				//console.log(data);
+				this.props.userProfile(data);
 				this.props.onRouteChange('home');
+			}
+			else {
+				alert('Email and password is wrong');
 			}
 		})
 		

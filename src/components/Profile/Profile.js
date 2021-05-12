@@ -1,15 +1,17 @@
 import React from 'react';
 
-const Profile = () => {
+const Profile = (props) => {
+	const {name, email, phone, district, upazilla, bloodType} = props.user;
+	console.log("From Profile " + name);
 	return(
 		<div className="white bg-dark-gray tl pa5 pt3" >
 			<h1 className="f1"> User Profile </h1>
-			<p className="f3"> Name : DatabaseName </p>
-			<p className="f3"> Email : database@database.com </p>
-			<p className="f3"> Phone : +880123456789 </p>
-			<p className="f3"> District : DistrictDatabase </p>
-			<p className="f3"> Division : DivisionDatabase </p>
-			<p className="f3"> Blood Type : M+ </p>
+			<p className="f3"> Name : {name} </p>
+			<p className="f3"> Email : {email} </p>
+			<p className="f3"> Phone : {phone} </p>
+			<p className="f3"> District : {district} </p>
+			<p className="f3"> Sub-District : {upazilla} </p>
+			<p className="f3"> Blood Type : {bloodType} </p>
 			 <div className="mv3">
 		        <label className="tl f3" htmlFor="blood-type">Want to Donate Your Blood ?</label>
 		        <select className="f4 pa2 pl4 pr4 ml4 input-reset ba bg-white hover-bg-black hover-white " 
