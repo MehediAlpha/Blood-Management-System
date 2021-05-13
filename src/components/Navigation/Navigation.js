@@ -3,7 +3,7 @@ import React from 'react';
 const Navigation = ({isSignedIn, onRouteChange, onRouteChange2}) => {
 	if (isSignedIn) {
 		return(
-			<nav className="bg-light-silver" style={{display: 'flex', justifyContent: 'flex-end'}}>
+			<nav className="bg-white" style={{display: 'flex', justifyContent: 'flex-end'}}>
 				<p onClick={()=> onRouteChange2('profile')} className='f4 grow black pa3 pointer b ma2 hover-white hover-bg-black' >Profile</p>
 				<p onClick={()=> onRouteChange2('bloodDonor')} className='f4 grow black pa3 pointer b ma2 hover-white hover-bg-black' >Blood Donor</p>
 				<p onClick={()=> onRouteChange('signin')} className='f4 grow black pa3 pointer b ma2 hover-white hover-bg-black' >Sign Out</p>

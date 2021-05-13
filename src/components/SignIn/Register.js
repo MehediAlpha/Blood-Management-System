@@ -88,7 +88,7 @@ class Register extends React.Component {
 				  </div>
 				  <div className="mv3">
 					<label className="tl db fw6 lh-copy f4" htmlFor="password">Password</label>
-					<input onChange = {this.password} className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="passwordID"/>
+					<input onChange = {this.onPassword} className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="passwordID"/>
 				  </div>
 				  <div className="mv3">
 					<label className="tl db fw6 lh-copy f4" htmlFor="phone">Phone</label>

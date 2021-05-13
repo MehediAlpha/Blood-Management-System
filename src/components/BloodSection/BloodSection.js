@@ -31,7 +31,7 @@ class BloodSection extends Component {
 		})
 
 		return(
-			<div>
+			<div className = "bg-light-gray vh-100">
 				<BloodSearch changeBlood = {this.onChangeBlood} changeLocation = {this.onChangeLocation}/>
 		        <BloodList UserList = {filteredUserList} />
 	        </div>
