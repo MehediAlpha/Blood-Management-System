@@ -1,10 +1,11 @@
 import React from 'react';
+import './Profile.css';
 
 const Profile = (props) => {
 	const {name, email, phone, district, upazilla, bloodType} = props.user;
 	console.log("From Profile " + name);
 	return(
-		<div className="white bg-dark-gray tl pa5 pt3" >
+		<div className="black  tl pa5 pt3 body"  >
 			<h1 className="f1"> User Profile </h1>
 			<p className="f3"> Name : {name} </p>
 			<p className="f3"> Email : {email} </p>
